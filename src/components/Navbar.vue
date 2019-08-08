@@ -4,7 +4,8 @@
             <RouterLink to="/">One</RouterLink>{{ ' | ' }}
             <router-link to="/about">Two</router-link>{{ ' | ' }}
             <router-link to="/user">User</router-link>{{ ' | ' }}
-            <router-link to="/form">Form</router-link>
+            <router-link to="/form">Form</router-link>{{ ' | ' }}
+            <router-link to="/nested">Nested</router-link>
         </p>
     </div>
 </template>

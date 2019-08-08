@@ -1,13 +1,16 @@
 <template>
-    <div>
-        <h3 class="title">One</h3>
+    <div class="box">
+        <h3 class="title">One: {{ doubleCounter }}</h3>
+        <Two :doubleCounter="doubleCounter*2" />
     </div>
 </template>
 
 <script>
+import Two from '@/components/Two.vue'
 export default {
-  data(){
-    return {}
-  }
+  components:{
+    Two
+  },
+  props: ['doubleCounter']
 }
 </script>

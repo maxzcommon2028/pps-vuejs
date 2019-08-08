@@ -14,7 +14,7 @@ const Three = () => import('@/components/Three' /* webpackChunkName: 'Three' */)
 const User = () => import('@/pages/User' /* webpackChunkName: 'User' */)
 const UserProfile = () => import('@/pages/UserProfile' /* webpackChunkName: 'UserProfile' */)
 const PersonForm = () => import('@/components/PersonForm' /* webpackChunkName: 'form' */)
-
+const Nested = () => import('@/pages/Nested' /* webpackChunkName: 'Nested' */)
 Vue.use(VueRouter)
 
 const routes = [
@@ -23,7 +23,8 @@ const routes = [
     { path: '/three', component: Three },
     { path: '/user', component: User },
     { path: '/user/:id', component: UserProfile },
-    { path: '/form', component: PersonForm }
+    { path: '/form', component: PersonForm },
+    { path: '/nested', component: Nested }
 ]
 
 const router = new VueRouter({

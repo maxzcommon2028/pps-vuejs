@@ -1,6 +1,6 @@
 <template>
-    <div>
-        <h3>Two</h3>
+    <div class="box">
+        <h1 class="title">Two : {{ doubleCounter }}</h1>
     </div>
 </template>
 
@@ -8,6 +8,7 @@
 export default {
   data(){
     return {}
-  }
+  },
+  props: ['doubleCounter']
 }
 </script>
