@@ -1,14 +1,10 @@
 <template>
     <div>
         <h1 class="title">Navbar</h1>
-        <p>
-            <RouterLink to="/">One</RouterLink>
-        </p>
-        <p>
-            <router-link to="/about">Two</router-link>
-        </p>
-        <p>
-            <router-link to="/user">User</router-link>
+            <RouterLink to="/">One</RouterLink>{{ ' | ' }}
+            <router-link to="/about">Two</router-link>{{ ' | ' }}
+            <router-link to="/user">User</router-link>{{ ' | ' }}
+            <router-link to="/form">Form</router-link>
         </p>
     </div>
 </template>
