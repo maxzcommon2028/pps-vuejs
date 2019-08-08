@@ -2,13 +2,14 @@
     <div>
         <h1 class="title">Chart</h1>
         <button @click="toggle()" class="button">Toggle</button>
-        <ApexChart :type="types[idx]" :series="series" :options="options" />
+        <button @click="get()" class="button">Download PDF</button>
+        <ApexChart ref="myChart" :type="types[idx]" :series="series" :options="options" />
     </div>
 </template>
 
 
 <script>
-
+import jsPDF from 'jspdf'
 export default {
     data(){
         return{
@@ -19,6 +20,13 @@ export default {
         toggle(){
             if(this.idx == 2 ) this.idx = 0
             else this.idx +=1
+        },
+        get(){
+            this.$refs.myChart.chart.dataURI().then(uri => {
+                const pdf = new jsPDF()
+                pdf.addImage(uri, 'PNG', 0, 0)
+                pdf.save('download.pdf')
+            })
         }
     },
     computed:{
