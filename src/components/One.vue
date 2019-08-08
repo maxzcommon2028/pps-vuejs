@@ -1,7 +1,7 @@
 <template>
     <div class="box">
         <h3 class="title">One: {{ doubleCounter }}</h3>
-        <Two :doubleCounter="doubleCounter*2" />
+        <Two :foo="doubleCounter*2" />
     </div>
 </template>
 
