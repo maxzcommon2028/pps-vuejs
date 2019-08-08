@@ -16,6 +16,7 @@ const UserProfile = () => import('@/pages/UserProfile' /* webpackChunkName: 'Use
 const PersonForm = () => import('@/components/PersonForm' /* webpackChunkName: 'form' */)
 const Nested = () => import('@/pages/Nested' /* webpackChunkName: 'Nested' */)
 const Vuex = () => import('@/pages/Vuex' /* webpackChunkName: 'Vuex' */)
+const Chart = () => import('@/pages/Chart' /* webpackChunkName: 'Chart' */)
 Vue.use(VueRouter)
 
 const routes = [
@@ -26,7 +27,8 @@ const routes = [
     { path: '/user/:id', component: UserProfile },
     { path: '/form', component: PersonForm },
     { path: '/nested', component: Nested },
-    { path: '/vuex', component: Vuex }
+    { path: '/vuex', component: Vuex },
+    { path: '/chart', component: Chart }
 ]
 
 const router = new VueRouter({

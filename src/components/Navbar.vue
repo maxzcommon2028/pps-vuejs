@@ -6,7 +6,8 @@
         <router-link to="/user">User</router-link>{{ ' | ' }}
         <router-link to="/form">Form</router-link>{{ ' | ' }}
         <router-link to="/nested">Nested</router-link>{{ ' | ' }}
-        <router-link to="/vuex">Vuex</router-link> {{ ' | ' }}
-        <!-- User: {{ $store.getters.userCount }} -->
+        <router-link to="/vuex">Vuex</router-link>{{ ' | ' }}
+        <router-link to="/chart">Vuex Chart</router-link> {{ ' | ' }}
+        User: {{ $store.getters.userCount }}
     </div>
 </template>
